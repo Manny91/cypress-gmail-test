@@ -29,7 +29,7 @@ module.exports = (on, config) => {
         path.resolve("", "credentials.json"), // Assuming credentials.json is in the current directory.
         path.resolve("", "gmail_token.json"), // Look for gmail_token.json in the current directory (if it doesn't exists, it will be created by the script).
         "test", // We are looking for 'Activate Your Account' in the subject of the message.
-        "manuel.canero@ovoenergy.com", // We are looking for a sender header which has 'no-reply@domain.com' in it.
+        "manuelcasancho@gmail.com", // We are looking for a sender header which has 'no-reply@domain.com' in it.
         "manuelcasancho@gmail.com", // Which inbox to poll. credentials.json should contain the credentials to it.
         10, // Poll interval (in seconds).
         30 // Maximum poll time (in seconds), after which we'll giveup.

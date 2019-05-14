@@ -18,7 +18,7 @@ describe("Email assertion:", () => {
     const incoming_mailbox = "manuelcasancho@gmail.com";
     cy
       .task("gmail:check", {
-        from: "manuel.canero@ovoenergy.com",
+        from: incoming_mailbox,
         to: incoming_mailbox,
         subject: "test"
       })
