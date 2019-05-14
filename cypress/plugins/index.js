@@ -48,8 +48,8 @@ module.exports = (on, config) => {
   on("task", {
     "gmail:get-messages": async args => {
       const messages = await gmail_tester.get_messages(
-        path.resolve("../", "credentials.json"),
-        path.resolve("../", "token.json"),
+        path.resolve("", "credentials.json"),
+        path.resolve("", "token.json"),
         args.options
       );
       return messages;
